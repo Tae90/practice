@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return</title>
+</head>
+
+<body>
+    <div onclick="output()">살인마 판독기</div>
+    <script>
+        var isMurderer = false;
+
+        function murder(human) {
+            if (human == true) {
+                return '살인마다'
+            } else {
+                return '살인마가 아니다'
+            }
+        }
+        function output() {
+            console.log(murder(isMurderer))
+
+
+        }
+    </script>
+
+</body>
+
+</html>
