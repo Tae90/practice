@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        /*         var num1 = 1;
+                var char1 = "1";
+        
+                if(num1 == 1){
+                    document.write("num1은"+num1+" 입니다");
+                }else{
+                    document.write("num1은"+num1+"이 아닙니다");
+                }
+        
+                for(var i=0; i<=5; i++){
+                    document.write(i+"<br>");
+                } */
+
+
+        /*             $(".btn").click(function () {
+                        $(".popup_bg").css({ "display": "block" });
+        
+                    });
+        
+                    $(".popup_bg").click(function () {
+                        $(this).css({ "display": "none" });
+                    }) */
+        $(function () {
+            $(".btn").hover(function () {
+                $(this).css({
+                    "background": "skyblue",
+                    "transition": "0.7s"
+                })
+            }, function () {
+                $(this).css({
+                    "background": "deeppink",
+                    "transition": "0.5s"
+                })
+
+            })
+
+        });
+    </script>
+    <style>
+        .btn {
+            width: 100px;
+            height: 40px;
+            background: deeppink;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /*         .popup_bg {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .popup {
+            position: absolute;
+            left: calc(50% - 150px);
+            top: calc(50% - 250px);
+            width: 300px;
+            height: 500px;
+            background: white;
+        } */
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <!-- <div class="popup_bg">
+        <div class="popup"></div> -->
+    </div>
+</body>
+
+</html>
